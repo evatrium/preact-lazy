@@ -1,0 +1,48 @@
+{
+  "name": "preact-lazy",
+  "version": "0.0.8",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iosio/preact-lazy.git"
+  },
+  "license": "MIT",
+  "main": "lib/index.js",
+  "module": "lib/index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "src",
+    "lib"
+  ],
+  "keywords": [
+    "asynchronous component",
+    "lazy",
+    "lazy load",
+    "preact",
+    "lazy loader"
+  ],
+  "scripts": {
+    "start": "rollup -c -w --environment project:demo,preset:dev",
+    "build": "rollup -c --environment preset:lib",
+    "build_demo": "rollup -c --environment project:demo,preset:build_app",
+    "test": "exit 0"
+  },
+  "rollupConfig": {
+    "project": {
+      "demo": {
+        "input": "demo/src/index.js",
+        "html": "demo/src/index.html",
+        "output": "demo/build"
+      }
+    }
+  },
+  "peerDependencies": {
+    "preact": "*"
+  },
+  "devDependencies": {
+    "preact": "^10.3.4",
+    "rollup-configured": "^0.0.10"
+  }
+}
