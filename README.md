@@ -5,7 +5,7 @@
 
 ### Installation
 ```
-npm install preact-lazy
+npm i preact-lazy
 ```
 ### Usage
 
@@ -17,9 +17,11 @@ export default () => <h1>LAZY LOADED!!!</h1>;
 ```
 
 ```js
+// index.js
 import {h, render} from 'preact';
-import lazy from 'preact-lazy'
+import lazy from 'preact-lazy';
 import {FallbackComponent} from './components'; 
+
 const ToBeLazyLoaded = lazy(() => import('./ToBeLazyLoaded'), /*optional*/ FallbackComponent);
 
 const App = () => (
@@ -30,4 +32,6 @@ const App = () => (
     </div>
 
 );
+
+render(<App/>, document.body)
 ```
