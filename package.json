@@ -1,6 +1,6 @@
 {
   "name": "preact-lazy",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Asynchronously load preact components with optional fallback content (simple alternative to suspense + lazy)",
   "repository": {
     "type": "git",
