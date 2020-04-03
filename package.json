@@ -1,7 +1,7 @@
 {
   "name": "preact-lazy",
-  "version": "0.0.8",
-  "description": "",
+  "version": "0.0.1",
+  "description": "Asynchronously load preact components with optional fallback content (simple alternative to suspense + lazy)",
   "repository": {
     "type": "git",
     "url": "https://github.com/iosio/preact-lazy.git"
